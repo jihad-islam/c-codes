@@ -1,0 +1,40 @@
+#include<stdio.h>
+#define pi 3.1416
+int main()
+{
+    float area;
+    char alphabet;
+
+    printf("Enter \nA for circle \nB for triangle \nC for rectangle\n");
+    scanf("%c",&alphabet);
+
+    if(alphabet=='A')
+    {
+        float r;
+        printf("enter the value of redius\n");
+        scanf("%f",&r);
+        area=pi*r*r;
+    }
+    else if(alphabet=='B')
+    {
+        float b,h;
+        printf("enter the value of base and height\n");
+        scanf("%f %f",&b,&h);
+        area=.5*b*h;
+    }
+    else if(alphabet=='C')
+    {
+        float l,w;
+        printf("enter the value of length and width\n");
+        scanf("%f %f",&l,&w);
+        area=l*w;
+    }
+    else
+    {
+        printf("wrong input");
+    }
+
+
+    printf("the area is %.2f",area);
+    return 0;
+}
