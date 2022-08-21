@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    char operator;
+    int n1, n2;
+
+    printf("enter an operator (+,-,*,/):\n");
+    scanf("%c",&operator);
+
+    printf("enter values\n");
+    scanf("%d\n%d",&n1, &n2);
+    
+    switch (operator)
+    {
+        case '+':
+        printf("result is %d", n1+n2);
+        break;
+
+        case '-':
+        printf("result is %d", n1-n2);
+        break;
+
+        case '*':
+        printf("result is %d", n1*n2);
+        break;
+
+        case '/':
+        printf("result is %d", n1/n2);
+        break;
+
+        default:
+        printf("wrong operator");
+    }
+    
+    return 0;
+}
