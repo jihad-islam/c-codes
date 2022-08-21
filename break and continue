@@ -1,0 +1,52 @@
+#include <stdio.h>
+int main()
+{
+    double number;
+    int i;
+
+    for (i=1; i<=10; i++)
+    {
+        printf("enter a number\n");
+        scanf("%lf",&number);
+
+        if (number<0)
+        {
+            break;
+        }
+
+        printf("you entered %.2lf\n", number);
+    }
+
+    printf("fuck off");
+
+    return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+int main()
+{
+    double number;
+    int i;
+
+    for (i=1; i<=10; i++)
+    {
+        printf("enter a number\n");
+        scanf("%lf",&number);
+
+        if (number<0)
+        {
+            continue;
+        }
+
+        printf("you entered %.2lf\n", number);
+    }
+
+    printf("fuck off");
+
+    return 0;
+}
